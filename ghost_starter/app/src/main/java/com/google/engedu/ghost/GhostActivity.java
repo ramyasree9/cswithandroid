@@ -32,7 +32,7 @@ public class GhostActivity extends ActionBarActivity   {
         {
             System.out.println("init");
             InputStream i= getAssets().open("words.txt");
-            dictionary =new SimpleDictionary(i);
+            dictionary =new FastDictionary(i);
         }
         catch(Exception a)
         {
